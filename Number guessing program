@@ -2,12 +2,12 @@
 #include <cstdlib>
 #include <ctime>
 int main() {
-    srand(time(NULL));//To ensure the random number changes every time the program is executed.
+    srand(time(NULL)); 
     int number = rand() % 100 + 1;
     int guess = 0;
     int attempts = 0;
     std::cout << "Welcome to the Number Guessing Game!\n";
-    do {  // code inside the loop runs at least once before the condition is checked.
+    do {   
         std::cout << "Guess a number between 1 and 100: ";
         std::cin >> guess;
         attempts++;
